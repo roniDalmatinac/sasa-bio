@@ -37,6 +37,31 @@ li a:hover:not(.active) {
 .active {
     background-color: #4CAF50;
 }
+
+.slike{
+  min-width: 200px;
+  max-width: 300px;
+  margin: 10px;
+  width: 200px;
+  height: 400px;
+  max-height: 400px;
+  min-height: 390px;
+  border: 5px solid  black;
+}
+.naslovi{
+  font-weight: bold;
+
+}
+#sasa-slika{
+
+ transform: rotate(270deg);
+}
+
+#nba-page{
+  max-width: 850px;
+  max-height:600px;
+}
+
 </style>
 
 <body class="w3-light-grey">
@@ -59,7 +84,8 @@ li a:hover:not(.active) {
 
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="sasa.jpg" style="width:100%" alt="Avatar">
+          <!-- <img id="sasa-slika" src="sasa.jpg" style="width:100%" alt="Avatar" > -->
+          <img  src="sasa1.jpg" style="width:100%" alt="Avatar" >
           <div class="w3-display-bottomleft w3-container w3-text-black">
 
           </div>
@@ -67,10 +93,10 @@ li a:hover:not(.active) {
         </div>
         <h2>Saša Ognjenović</h2>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Developer</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Rijeka, Croatia</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ognjenovic_sasa@hotmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>095 520 2629</p>
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
@@ -86,7 +112,7 @@ li a:hover:not(.active) {
           </div>
           <p>HTML & CSS</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
           </div>
           <p>JavaScript & JQuery</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
@@ -96,11 +122,11 @@ li a:hover:not(.active) {
 
           <p>Oracle SQL</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
           </div>
           <p>Github & Bootstrap</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
           </div>
           <br>
 
@@ -125,52 +151,72 @@ li a:hover:not(.active) {
     <div class="w3-twothird">
 
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experience</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Android application projects</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
           <p>Link to my <a href="https://play.google.com/store/apps/developer?id=JuniorDeveloper">projects</a>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>University of Rijeka</b></h5>
-          <h6 class="w3-opacity"><b>Economics</b></h6>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2018</h6>
-          <p>Bachelor Degree</p><br>
-        </div>
+      <hr>
+<div class="w3-container">
+  <p class="naslovi" >
+Clima app fetches location in real-time, uses API from weather forecast web site, and displays it.</p>
+  <img class="slike" src="slike/clima.png" alt="clima picture">
+  <img class="slike" src="slike/clima-sec.png" alt="clima picture">
+  <img class="slike" src="slike/clima3.png" alt="clima picture">
+</div>
+<hr>
+<div class="w3-container">
+  <p class="naslovi">  FlashChat is a correspondence application which communicates via google fire base server.</p>
+<img class="slike" src="slike/flashchat1.png" alt="flashchat picture">
+<img class="slike" src="slike/flashchat2.png" alt="flashchat picture">
+<img class="slike" src="slike/flashchat3.png" alt="flashchat picture">
+<hr>
+</div>
+
+<div class="w3-container">
+  <p class="naslovi">  Bitcoin ticker retrieves bitcoin prices in real time using the API.</p>
+<img class="slike" src="slike/bitcoin1.png" alt="bitcoin picture">
+<img class="slike" src="slike/bitcoin2.png" alt="bitcoin picture">
+
+<hr>
+<div class="w3-container">
+  <h5 class="w3-opacity"><b>NBA Web Page</b></h5>
+  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+  <p>Link to my <a href="https://ronidalmatinac.github.io/nba-web-page/">page</a>
+</div>
+<img id="nba-page"src="slike/nba-page.png" alt="nba page">
+
+</div>
+
       </div>
 
+
+
+
       <div class="w3-container w3-card w3-white">
+
+
+
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
+
+
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>University of Rijeka</b></h5>
+            <h5 class="w3-opacity"><b>Economics</b></h5>
+            <h5 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2018</h5>
+            <p>Bachelor Degree</p>
+
+          </div>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
+          <h5 class="w3-opacity"><b> Grammar School</b></h5>
+          <h5 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2013</h5>
           <hr>
+
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>University of Rijeka</b></h5>
-          <h6 class="w3-opacity"><b>Economics</b></h6>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2018</h6>
-          <p>Bachelor Degree</p><br>
-        </div>
+
       </div>
 
     <!-- End Right Column -->
@@ -186,14 +232,14 @@ li a:hover:not(.active) {
   <p>Find me on social media.</p>
 
   <a href="https://www.facebook.com/sasa.ognjenovic.3"> <i class="fa fa-facebook-official w3-hover-opacity"> </i></a>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
+
 <a href="https://github.com/roniDalmatinac"> <i class="fa fa-github w3-hover-opacity"></i></a>
 
 
   <a href="https://play.google.com/store/apps/developer?id=JuniorDeveloper"> <i class="fa fa-google w3-hover-opacity"></i></a>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
+
    <a href="https://www.linkedin.com/in/sa%C5%A1a-ognjenovi%C4%87-733905161/"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  
+
 </footer>
 
 </body>
